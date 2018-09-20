@@ -1,0 +1,13 @@
+SET @@global.time_zone = '+00:00';
+
+SET @@session.time_zone = '+00:00';
+
+
+create database SpringDB;
+
+use SpringDB;
+
+CREATE TABLE customer (
+ customerId int(10) primary key auto_increment,
+ name varchar(100) not null,
+ last_name varchar(100) not null);
